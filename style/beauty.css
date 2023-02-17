@@ -65,13 +65,14 @@ li {
 }
 
 .chair-area {
-    text-align: center;
-    background-color: #F13C6E;
-    height: 650px;
+    background-image:url("../images/superchair.jpg");
+    background-color: #F13C6E; /* Used if the image is unavailable */
+    height: 600px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
+    background-repeat: no-repeat;
 }
 
 .chair-description {
@@ -82,7 +83,7 @@ li {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .chair-description h1 {
