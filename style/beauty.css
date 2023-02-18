@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -13,16 +20,32 @@ li {
     background-color: #EFEFEF;
 }
 
+#logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F13C6E;
+    letter-spacing: 5px;
+    font-size: xx-large;
+    min-width: 258px;
+    justify-content: space-between;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+}
+
+.social{
+    min-width: 175px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacts-bar {
@@ -51,6 +74,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
 }
 
 #phone-num {
@@ -67,11 +91,9 @@ li {
 .chair-area {
     background-image: url(../images/superchair.jpg);
     background-color: #F13C6E;
-    height: 604px;
+    min-height: 604px;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -88,21 +110,22 @@ li {
 }
 
 .chair-description h1 {
-    margin-bottom: 5%;
-   font-size: 48px;
+    margin-bottom: 30px;
+    font-size: 48px;
 
 }
 
 #more-btn {
     background: #F13C6E;
     border: 2px solid #FFFFFF;
-    border-radius: 40px;    width: 170px;
-    padding: 3% 0;
+    border-radius: 40px;
+    width: 170px;
+    padding: 10px 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    color: #FFFFFF;
 }
 
 .shop {
@@ -110,6 +133,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .item {
@@ -157,7 +181,7 @@ li {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 2%;
 }
 
@@ -165,22 +189,23 @@ li {
     display: flex;
     background-color: #F13C6E;
     flex-direction: row;
-    padding: 2%;
+    padding: 25px 0;
     margin: 30px 0px;
     justify-content: space-around;
+    align-items: center;
+    min-width: 500px;
 }
 
 #form{
     border-radius: 45px;
-    height: 40px;
     text-align: center;
     border: none;
+    padding: 10px 15px;
 }
 
 #banner-img{
-    max-height: 50%;
-    position: relative;
-    top: 20%;
+    max-height: 90%;
+
 }
 
 .banner-content{
@@ -189,7 +214,12 @@ li {
     justify-content: space-between;
     align-items: flex-start;
     color: #FFFFFF;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    max-width: 40%;
+}
+
+.banner-content h3, p{
+    margin-bottom: 10px;
 }
 
 .impuls{
@@ -198,12 +228,13 @@ li {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 65%;
 }
 
 .impuls-wrapper {
     display: flex;
     justify-content: center;
+    max-width: 65%;
 }
 
 .panel {
@@ -213,22 +244,30 @@ li {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
 }
 
+.panel>:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.panel>:last-child{
+    padding-bottom: 2%;
+}
+
 .impuls li {
-    border: 30px solid #FFFFFF;
-    padding: 0%;
+    border: 1px solid #EFEFEF;
+    padding: 30px;
+    background-color: #FFFFFF;
 }
 
 footer{
     display: flex;
     justify-content: space-evenly;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 10px;
     line-height: 200%;
-    padding: 3%;
+    padding: 3% 0;
 }
 
 footer h3{
